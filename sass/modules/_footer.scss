@@ -1,0 +1,124 @@
+.footer{
+    height: 600px;
+    width: 100%;
+    background-image: url(../img/fondofooter.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    &__fondo{
+        height: 100%;
+        width: 100%;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.8); 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__center{
+            height: 90%;
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            &__col{
+                height: 90%;
+                width: 25%;
+                flex-direction: column;
+                display: flex;
+                overflow: hidden;
+                span{
+                    margin-top: 1rem;
+                    margin-left: 1rem;
+                }
+                a:hover{
+                    text-decoration: underline;
+                }
+                iframe{
+                    height: 200px;
+                    width: 200px;
+                    margin: 2rem 2rem 1rem 4.5rem;
+                }
+                input{
+                    margin-top: 1rem;
+                    margin-left: 1rem;
+                    width: 80%;
+                    height: 35px;
+                    border-radius: 10px;
+                }
+                input[type="text"]::placeholder{
+                    padding-left: 20px;
+                    color: black;
+                }
+                button{
+                    margin-top: 1rem;
+                    margin-left: 1rem;
+                    width: 40%;
+                    height: 30px;
+                    border-radius: 10px;
+                    border: none;
+                    background-color: $color1;
+                    color: white;
+                    cursor: pointer;
+                }
+                button:hover{
+                    background-color: $color3;
+                }
+                &__icons{
+                    width: auto;
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content:start;
+                    margin-top: 1rem;
+                    i{
+                        font-size: 1.5rem;
+                        padding: 1rem 1rem;
+                        color: white;
+                    }
+                    i:hover{
+                        color: $color3;
+                    }
+                }
+                &__tarjetas{
+                    height: auto;
+                    width: 100%;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    margin-top: 1rem;
+                }
+                &--title{
+                    font-size: 2rem;
+                }
+                &--a{
+                    margin-top: 2rem;
+                    margin-left: 1rem;
+                    color: white;
+                }
+            }
+        }
+    }
+    &__wsp {
+        position: fixed;
+        bottom: 30px;
+        right: 25px;
+        z-index: 100;
+        a{
+            display: block;
+            width: 70px; 
+            height: 70px; 
+            background-color: #25D366; 
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 50px;
+            text-decoration: none;
+        }
+        a:hover {
+            background-color: #128C7E;
+        }
+        i{
+            margin: 0.7rem 0rem 0rem 0rem;
+            font-size: 3rem;
+        }
+    }    
+}

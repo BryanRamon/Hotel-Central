@@ -1,0 +1,32 @@
+.boxVideo{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    &__conteiner{
+        width: 90%;
+        height: 400px;
+        background-color: $color2;
+        overflow: hidden;
+        display: flex;
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+        video{
+            width: 40%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &__text{
+            width: auto;
+            height: 100%;
+            margin: 0rem 2rem;
+            h3{
+                font-size: 3rem;
+                margin-top: 2rem;
+            }
+            p{
+                text-align: justify;
+            }
+        }
+    }
+}
